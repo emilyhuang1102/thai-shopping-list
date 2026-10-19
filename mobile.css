@@ -1,0 +1,52 @@
+.toolbar-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%}
+.add-item,.save-item{border:0;border-radius:14px;background:var(--brown);color:#fff;padding:14px 20px;font:inherit;font-weight:700;min-height:52px;cursor:pointer;touch-action:manipulation}
+.filter,.reset{min-height:44px;touch-action:manipulation}
+.notice{font-size:14px;color:var(--brown);line-height:1.6;margin:0 0 14px;overflow-wrap:anywhere}
+.notice:empty{display:none}
+.buy{left:0;right:0;bottom:0;margin:0;width:100%;min-height:52px;justify-content:center;gap:12px;font-size:16px;font-weight:700;padding:13px 18px;border:0;border-top:1px solid var(--line);border-radius:0;box-shadow:none;cursor:pointer;touch-action:manipulation}
+.buy input{position:absolute;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.buy-check{font-size:24px;font-weight:800;line-height:1;flex-shrink:0}
+.buy:has(input:checked){background:#79543a;color:white;border-color:#79543a}
+.buy:has(input:focus-visible){outline:3px solid #b48334;outline-offset:-3px}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #b48334;outline-offset:4px}
+.quantity{font-size:14px;font-weight:700;background:#f2e4cc;color:#674421;border-color:#e6cda4;margin-top:8px}
+.new-product .visual img{object-fit:cover;object-position:center 44%}
+.new-product .zoom{min-height:44px;font-size:13px}
+.card h3,.desc{overflow-wrap:anywhere}
+.desc{white-space:pre-wrap}
+.custom-item .visual{display:flex;align-items:center;justify-content:center;min-height:200px;padding-bottom:70px}
+.custom-item .noimage{height:auto;background:none;font-size:64px}
+.remove-item{margin-top:18px;min-height:44px;border:1px solid var(--line);border-radius:10px;background:transparent;color:#77715e;padding:10px 14px;cursor:pointer;font:inherit;font-size:13px}
+.item-dialog{border:1px solid var(--line);border-radius:22px;padding:26px;width:min(480px,calc(100% - 28px));max-height:calc(100dvh - 40px);overflow:auto;color:var(--ink);background:var(--card);box-shadow:0 20px 70px #25291f33}
+.item-dialog::backdrop{background:#25291f99}
+.item-dialog h2{margin:0 0 8px;font-size:24px}
+.form-help{font-size:14px;color:var(--muted);margin:0 0 22px;line-height:1.6}
+.field{display:flex;flex-direction:column;gap:8px;margin-bottom:18px;font-size:15px;font-weight:650}
+.field input,.field select,.field textarea{width:100%;border:1px solid #cfc7b7;border-radius:10px;padding:13px 12px;background:#fff;color:var(--ink);font:inherit;font-size:16px;font-weight:400;min-height:50px}
+.field textarea{resize:vertical;min-height:95px}
+.form-actions{display:flex;gap:12px;margin-top:22px}
+.form-actions button{flex:1;min-height:52px}
+.cancel-item{border:1px solid var(--line);border-radius:14px;background:transparent;color:var(--ink);font:inherit;cursor:pointer}
+.form-error{font-size:14px;color:#9a2828;line-height:1.6}
+@media(max-width:740px){
+ .buy{position:relative;inset:auto;margin:0;min-height:56px;font-size:17px;border-radius:0;padding:15px 18px}
+ .buy-check{font-size:26px}
+ .add-item{min-height:52px;padding:13px 17px;font-size:16px}
+ .new-product .visual img{height:320px;object-fit:cover;object-position:center 44%}
+ .custom-item .visual{display:block;min-height:0;padding:16px 0 0}
+ .custom-item .noimage{height:110px;display:grid;place-items:center}
+ .item-dialog{padding:22px 18px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}}
+
+/* Smell Lemongrass 門市資訊 */
+.store-info{width:100%;font-size:14px;line-height:1.7;color:#62665b;overflow-wrap:anywhere}
+.store-info h4{margin:4px 0 14px;color:var(--ink);font-size:16px}
+.store-location{margin:0 0 22px}
+.store-location h5{font-size:15px;color:var(--brown);line-height:1.5;margin:0 0 8px}
+.store-location p{margin:6px 0}
+.store-links{display:flex;gap:8px 14px;flex-wrap:wrap;margin-top:6px}
+.store-links a{display:inline-flex;align-items:center;min-height:44px;color:var(--brown);text-underline-offset:4px}
+.store-updated{font-size:11px;color:var(--muted);margin:0}
+.store-updated a{color:inherit;text-underline-offset:3px}
+.smell-item .visual img{object-fit:contain;background:#edf0e4}
